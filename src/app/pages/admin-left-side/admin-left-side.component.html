@@ -1,0 +1,39 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <!--  user panel -->
+    <!-- <div class="user-panel">
+      <div class="pull-left image">
+        <img src="{{userImage}}" class="img-circle" alt="User Image" *ngIf="userImage">
+      </div>
+      <div class="pull-left info">
+        <p>Venky</p>
+        <a href="#">
+          <i class="fa fa-circle text-success"></i>Super</a>
+      </div>
+    </div> -->
+    <!-- <a routerLink="/{{router.routerLink}}" *ngIf="router.roles.indexOf(userRole) !== -1 "> -->
+    <ul class="sidebar-menu">
+        <li *ngFor="let router of menuList" routerLinkActive="active">
+          <a routerLink="/{{router.routerLink}}">
+            <i class="{{router.icon}}"></i>
+            <span>{{router.displayName}}</span>
+          </a>
+        </li>
+      </ul>
+    <!-- <ul class="sidebar-menu">
+       <li routerLinkActive="active">
+        <a routerLink="/dashboard">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/student-management">
+          <i class="fa fa-dashboard"></i>
+          <span>Student Management</span>
+        </a>
+      </li>
+    </ul> -->
+  </section>
+  <!-- /.sidebar -->
+</aside>

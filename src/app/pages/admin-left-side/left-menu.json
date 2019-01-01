@@ -1,0 +1,8 @@
+[
+  {
+    "routerLink": "dashboard",
+    "icon": "fa fa-dashboard",
+    "displayName": "Dashboard",
+    "roles": [100, 101, 102, 103, 104, 105]
+  }
+]

@@ -1,0 +1,189 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "../node_modules/angular2-toaster/toaster.css";
+// @import "../node_modules/admin-lte/dist/css/AdminLTE.min.css";
+// @import "../node_modules/admin-lte/dist/css/skins/_all-skins.min.css";
+// @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// @import "../node_modules/font-awesome/css/font-awesome.min.css";
+// @import "../node_modules/ionicons/dist/css/ionicons.min.css";
+$white: #FFFFFF;
+$black: #222222;
+$blue: #AEDAFF;
+$green: #4FB324;
+$nav-black: #26292B;
+$primary: #2E7FFD;
+$red: #DE0E1B;
+$orrange: #F48500;
+$yellow: #FCCB00;
+$gray-light: #B3B8BC;
+$gray-lightest: #F5F5F5;
+$gray-lighter: #E4E6E7;
+$gray-dark: #8D959A;
+$gray-darkest: #51575C;
+$table-border: #D9D9D9;
+$bg-header: #088ec1;
+a:hover, a:active {
+  text-decoration: none;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mr-left-10 {
+  margin-left: 10px;
+}
+// Form style start
+.form-heading {
+  font-size: 24px;
+  font-weight: 300;
+  border-bottom: 1px solid $table-border;
+  margin-bottom: 21px;
+  padding-bottom: 10px;
+}
+input.form-control {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: none;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+button.btnpicker.btnpickerenabled {
+  border-left: 1px solid $table-border;
+}
+.button-list, span.ui-cell-data {
+  button {
+    margin-left: 10px;
+  }
+}
+// Form style end
+/* upload profile css start */
+.upload-profile input[type="file"] {
+  display: none !important;
+}
+.upload-profile {
+  position: relative;
+  display: inline-block; 
+  overflow: hidden; 
+}
+label#file-upload-text {
+  margin-bottom: 0;
+}
+.upload-profile img:hover {
+  opacity: 0.5
+}
+.upload-profile:hover .hover-text {
+  opacity: 1; 
+  top: 0; 
+  z-index: 500;
+}
+
+.upload-profile:hover .hover-text span {
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.upload-profile .hover-text {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+img.source-image {
+  height: 200px;
+  width: 190px;
+}
+/* Upload css end */
+
+.toast-container.toast-top-full-width .toast, .toast-container.toast-bottom-full-width .toast {
+  width: 100% !important;
+  height: 40px;
+  padding: 10px 50px;
+  border-radius: 0;
+}
+
+.ng-busy-default-sign {
+  background: none !important;
+  border: 0px !important;
+  box-shadow: none !important;
+}
+.ng-busy-default-spinner {
+  width: 50px !important;
+  height: 50px !important;
+  position: fixed !important;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ui-state-default {
+  border: 1px solid $gray-light;
+  background: $gray-lightest;
+  color: $nav-black;
+}
+.ui-datatable {
+  .ui-datatable-thead>tr>th, .ui-datatable-tfoot>tr>td {
+    font-weight: 600;
+    padding: 8px;
+    text-align: left;
+    outline: none;
+  }
+  th.ui-state-active {
+    background: $primary;
+    color: $white;
+  }
+  .ui-sortable-column-icon {
+    float: right;
+    margin-top: 5px;
+  }
+  .ui-paginator {
+    background-color: $white;
+  }
+  .ui-paginator-bottom {
+    text-align: right;
+    //background: $white;
+    border: 0;
+  }
+  .ui-dropdown {
+    min-width: 6em;
+    float: left;
+    height: 2.5em;
+    line-height: 1.8em;
+    text-align: left;
+    outline: none;
+    padding-left: 5px;
+    margin-left: 0;
+  }
+  .ui-datatable-thead>tr>th, 
+  .ui-datatable-tfoot>tr>td, 
+  .ui-datatable-data>tr>td {
+    padding: 10px;
+    border-color: $table-border;
+  }
+}
+
+.bg-info {
+  color: #fff !important;
+  background-color: $bg-header;
+}
+
+tr.ui-widget-content.ui-datatable-emptymessage-row {
+  border-color: $table-border;
+}
+
+td.ui-datatable-emptymessage {
+  text-align: center;
+}
+.modal-dialog.custom-modal {
+  width: 400px;
+}
+
+

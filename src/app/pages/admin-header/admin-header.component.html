@@ -1,0 +1,55 @@
+<header class="main-header">
+    <a class="logo">
+        <span class="logo-mini">KVR</span>
+        <span class="logo-lg">KVR  Dashboard</span>
+      </a>
+  <nav class="navbar navbar-static-top">
+     
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img [src]="croppedImage" class="user-image" alt="User Image">
+            <span class="hidden-xs">{{userDetails.userName}}</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="user-header">
+              <div class="upload-profile">
+                <input id="file-upload" type="file" name="fileUpload" accept="image/*" (change)="fileChangeEvent($event, modal)" />
+                <label for="file-upload" id="file-upload-text">
+                  <img [src]="croppedImage" class="img-circle" alt="User Image" style="width: 100px;">
+                  <div class="hover-text">
+                    <span>Change Logo</span>
+                  </div>
+                </label>
+              </div>
+              <p>
+                {{userDetails.userName}}
+                <small>Admin</small>
+              </p>
+            </li>
+            <li class="user-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <a routerLink="/change-password">Change Password</a>
+                </div>
+              </div>
+
+            </li>
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="#" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a (click)="onLogout()" class="btn btn-default btn-flat">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
